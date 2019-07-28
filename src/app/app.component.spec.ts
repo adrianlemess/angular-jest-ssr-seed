@@ -32,4 +32,13 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-boilerplate!');
   });
+
+  it('Snapshot of component', () => {
+    expect(AppComponent).toMatchSnapshot('AppComponent');
+  });
+
+  it('Snapshot of html component=', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    expect(fixture.debugElement.nativeElement).toMatchSnapshot('html');
+  });
 });
