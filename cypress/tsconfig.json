@@ -1,11 +1,3 @@
 {
-  "include": [
-    "integration/*.ts",
-    "../node_modules/cypress"
-  ],
-  "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "skipLibCheck": true
-  }
+  "extends": "./tsconfig-e2e.json"
 }

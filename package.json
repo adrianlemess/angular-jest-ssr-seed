@@ -12,7 +12,7 @@
     "test:ci": "npm run test -- -ci --runInBand --coverage",
     "lint": "ng lint",
     "prepush": "npm run lint && npm run test:ci && npm run build",
-    "cy:open": "cypress open",
+    "e2e": "cypress open",
     "dev:ssr": "npm run build:ssr && npm run serve:ssr",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
