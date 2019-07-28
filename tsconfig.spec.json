@@ -16,6 +16,6 @@
     "src/**/*.d.ts"
   ],
   "exclude": [
-    "e2e/**"
+    "cypress/**"
   ]
 }
