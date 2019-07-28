@@ -22,7 +22,8 @@
     "testPathIgnorePatterns": [
       "<rootDir>/node_modules/",
       "<rootDir>/dist/",
-      "<rootDir>/src/test.ts"
+      "<rootDir>/src/test.ts",
+      "<rootDir>/e2e/"
     ],
     "globals": {
       "ts-jest": {
