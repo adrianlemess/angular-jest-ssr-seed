@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start:dev": "ng serve -c dev",
     "build": "ng build --prod",
+    "build:ci": "ng build -c ci ",
     "sonar": "npm run test:ci && sonar-scanner",
     "test": "cross-env TZ=America/Sao_Paulo jest --no-cache",
     "test:snapshot": "npm run test -- --coverage -u",
@@ -44,7 +44,11 @@
     "@angular/forms": "~8.1.2",
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
+    "@angular/platform-server": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "@nguniversal/express-engine": "^8.1.1",
+    "@nguniversal/module-map-ngfactory-loader": "8.1.1",
+    "express": "^4.15.2",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
@@ -69,6 +73,7 @@
     "ts-loader": "^6.0.4",
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
-    "typescript": "~3.4.3"
+    "typescript": "~3.4.3",
+    "webpack-cli": "^3.1.0"
   }
 }
