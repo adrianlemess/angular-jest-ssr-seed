@@ -11,8 +11,10 @@
     "test:watch": "npm run test -- --watch",
     "test:ci": "npm run test -- -ci --runInBand --coverage",
     "lint": "ng lint",
-    "prepush": "npm run lint && npm run test:ci && npm run build",
-    "e2e": "cypress open"
+    "prepush": "npm run lint && npm run test:ci && npm run build && npm run e2e:ci",
+    "e2e": "cypress open",
+    "e2e:ci": "cypress run"
+
   },
   "jest": {
     "preset": "jest-preset-angular",
