@@ -13,7 +13,12 @@
     "test:ci": "npm run test -- -ci --runInBand --coverage",
     "lint": "ng lint",
     "prepush": "npm run lint && npm run sonar && npm run build",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "dev:ssr": "npm run build:ssr && npm run serve:ssr",
+    "compile:server": "webpack --config webpack.server.config.js --progress --colors",
+    "serve:ssr": "node dist/server",
+    "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
+    "build:client-and-server-bundles": "ng build --prod && ng run angular-boilerplate:server:production --bundleDependencies all"
   },
   "jest": {
     "preset": "jest-preset-angular",
