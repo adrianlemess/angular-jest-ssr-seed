@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-boilerplate": {
+    "angular-template": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -86,18 +86,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-boilerplate:build"
+            "browserTarget": "angular-template:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-boilerplate:build:production"
+              "browserTarget": "angular-template:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-boilerplate:build"
+            "browserTarget": "angular-template:build"
           }
         },
         "test": {
@@ -155,5 +155,5 @@
         }
       }
     }},
-  "defaultProject": "angular-boilerplate"
+  "defaultProject": "angular-template"
 }
